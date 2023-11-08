@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Music Player</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" alt="left-banner-img">
+            <div class="heading">
+                <h1></h1>
+            <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-section">
+
+        <div class="controls" onclick="playaudio()" id="play-pause"><img  class="play-button"src="images/play-button.svg" alt="play-image"></div>
+
+        <audio id="song"></audio>
+
+        <table>
+            <thead>
+                <th class="song-number">#</th>
+                <th class="song-title">Title</th>
+                <th class="song-artist">Artist</th>
+                <th class="song-duration">Duration</th>
+            </thead>
+            <tr id="song1" onclick="playAll(1)">
+                <td>1</td>
+                <td>Adi-penne cover song</td>
+                <td> Stephen Zechariah  </td>
+                <td>5:00</td>
+              </tr>
+              <tr id="song2" onclick="playAll(2)">
+                <td>2</td>
+                <td>Karuppu-Perazhaga</td>
+                <td>S.Thaman</td>
+                <td>04:49</td>
+              </tr>
+              <tr id="song3" onclick="playAll(3)">
+                <td>3</td>
+                <td>Roja Kadale</td>
+                <td>Harris Jairaj</td>
+                <td>05:19</td>
+              </tr>
+              <tr id="song4" onclick="playAll(4)">
+                <td>4</td>
+                <td>Kanja-Poovu-Kannala</td>
+                <td>Yuvan Shankar Raja</td>
+                <td>03:55</td>
+              </tr>
+              <tr id="song5" onclick="playAll(5)">
+                <td>5</td>
+                <td>Once Upon A Time</td>
+                <td>Anirudh Ravichandaran</td>
+                <td>02:33</td>
+              </tr>
+              <tr id="song6" onclick="playAll(6)">
+                <td>6</td>
+                <td>Oru Maalai</td>
+                <td>Harris Jairaj</td>
+                <td>05:52</td>
+              </tr>
+              <tr id="song7" onclick="playAll(7)">
+                <td>7</td>
+                <td>Satakli</td>
+                <td>Sukhwinder Singh</td>
+                <td>03:47</td>
+              </tr>
+              <tr id="song8" onclick="playAll(8)">
+                <td>8</td>
+                <td>Fall in Love</td>
+                <td>Krishna</td>
+                <td>03:58</td>
+              </tr>
+              <tr id="song9" onclick="playAll(9)">
+                <td>9</td>
+                <td>Munbe-Va En-Vaa</td>
+                <td>A.R.Rahman</td>
+                <td>05:58</td>
+              </tr>
+              <tr id="song10" onclick="playAll(10)">
+                <td>10</td>
+                <td>Suttum-Vizhi</td>
+                <td>Harris Jairaj</td>
+                <td>05:16</td>
+              </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
